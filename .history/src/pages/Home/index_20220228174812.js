@@ -1,12 +1,11 @@
 //https://sujeitoprogramador.com/r-api/?api=filmes/
 
 import './styles.css'
-import Routes from './routes'
 
-export default function App() {
+export default function Home() {
   return (
-    <div className="app">
-      <Routes/>
+    <div>
+      <h1>Filmaria</h1>
     </div>        
   );
 }

@@ -5,7 +5,8 @@ import Routes from './routes'
 
 export default function App() {
   return (
-    <div className="app">
+    <div>
+      <h1>Filmaria</h1>
       <Routes/>
     </div>        
   );
