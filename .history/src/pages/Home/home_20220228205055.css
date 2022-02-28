@@ -1,0 +1,34 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 800px;
+}
+
+.Lista-filmes {
+  margin: 15px;
+}
+
+.Lista-filmes article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  margin: 15px;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.Lista-filmes strong {
+  padding-bottom: 15px;
+  font-size: 22px;
+}
+
+.Lista-filmes img {
+  width: 900px;
+  max-height: 350px;
+}
+
+.lista-filmes article a {}
