@@ -44,7 +44,7 @@ export default function Filme(){
       <div className="botoes">
         <button onClick={()=>{}}>Salvar</button>
         <button>
-          <a target="blank" href={`https://youtube.com/results?search_query=${filme.nome} Trailer`}>
+          <a href={`https://youtube.com/results?search_query=${filme.nome} Trailer`}>
             Trailer
           </a>
         </button>

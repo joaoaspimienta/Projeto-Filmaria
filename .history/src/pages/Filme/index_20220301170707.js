@@ -1,29 +1,23 @@
 import { useState, useEffect } from 'react'
 import './filme-info.css'
-import { useParams, useHistory } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 import api from '../../services/api'
+import { Link } from '../../services/'
 
 export default function Filme(){
   const { id } = useParams();
-  const history = useHistory();
   const [filme, setFilme] = useState([])
   const [loading, setLoading] = useState(true)
 
   useEffect(() =>{
     async function loadFilme(){
       const response = await api.get(`r-api/?api=filmes/${id}`)
-
-      if(response.data.length === 0){
-        history.replace('/');
-        return;
-      }
-
       setFilme(response.data)
       setLoading(false)
     }
 
     loadFilme()
-  }, [id, history]);
+  }, [id])
 
 
   if(loading){
@@ -36,19 +30,20 @@ export default function Filme(){
   }
   return(
     <div className="filme-info">
-      <h1>{filme.nome}</h1> 
-      <img src={filme.foto} alt={filme.nome} />      
-      <h3>Sinopse</h3>      
-      <span>{filme.sinopse}</span>
-
-      <div className="botoes">
-        <button onClick={()=>{}}>Salvar</button>
-        <button>
-          <a target="blank" href={`https://youtube.com/results?search_query=${filme.nome} Trailer`}>
-            Trailer
-          </a>
-        </button>
+      <h1>PÁGINA DETALHES</h1>
+      <div className="container">
+      <div className="lista-filmes">
+        {filme.map((filme)=>{
+          return(
+            <article key={filme.id}>
+              <strong>{filme.nome}</strong>
+              <img src={filme.foto} alt={filme.nome} />
+              <Link to={`/filme/${filme.id}`}>Acessar</Link>
+            </article>
+          )
+        })}
       </div>
+    </div>     
     </div>
     
   )

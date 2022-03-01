@@ -53,6 +53,6 @@
   transition: all 0.5s;
 }
 
-.filme-info a:hover {
+.filme-info a {
   color: white;
 }
