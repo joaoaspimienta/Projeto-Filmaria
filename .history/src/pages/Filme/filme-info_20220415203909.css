@@ -26,14 +26,9 @@
   flex-direction: column;
 }
 
-.filme-info span{
-  font-size: 20px;
-}
-
-
 .filme-info img {
   border-radius: 20px;
-  width: 100%;
+  align-items: center;
 }
 
 .filme-info button {

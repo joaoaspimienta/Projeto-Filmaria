@@ -3,7 +3,8 @@ import { BrowserRouter, Switch, Route } from "react-router-dom"
 import Home from "./pages/Home"
 import Header from "./components/Header"
 import Filme from "./pages/Filme"
-import Favoritos from './pages/favoritos'
+import Favoritos from "./pages/favoritos/favoritos"
+/* import Favoritos from './pages/favoritos' */
 
 const Routes = () => {
   return(

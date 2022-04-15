@@ -26,11 +26,6 @@
   flex-direction: column;
 }
 
-.filme-info span{
-  font-size: 20px;
-}
-
-
 .filme-info img {
   border-radius: 20px;
   width: 100%;
@@ -42,7 +37,7 @@
   cursor: pointer;
   border-radius: 5px;
   border: 0;
-  font-size: 20px;
+  font-size: 16px;
   outline: none;
   padding: 12px;
   transition: all 0.5s;

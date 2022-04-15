@@ -22,14 +22,9 @@
 .filme-info {
   display: flex;
   align-items: flex-start;
-  max-width: 900px;
+  max-width: 800px;
   flex-direction: column;
 }
-
-.filme-info span{
-  font-size: 20px;
-}
-
 
 .filme-info img {
   border-radius: 20px;
